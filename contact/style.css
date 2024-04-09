@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #232628;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #e94f37;
+    position: absolute;
+    z-index: 2;
+    opacity: .8;
+    clip-path: circle(40% at right 70%);
+}
+
+.input{
+    background-color: #383e41;
+    height: 500px;
+    border-radius: 16px;
+    width:900px;
+    position: relative;
+    top:10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+}
+
+.input h1{
+    color: #ffffd9;
+    margin-left: 23px;
+    margin-top: 17px;
+}
+
+.content{
+    z-index: 3;
+}
+
+.o-in{
+    height: 30px;
+    margin-left: 23px;
+}
+
+.margin{
+    margin-left: 23px;
+    color:#ffffd9;
+}
+
+#country{
+    color: black;;
+}
+
+.nav-item{
+    display: inline-block;
+}
+
+.nav-link{
+    color: #ffffd9;
+    text-decoration: none;
+}
+
+#go-back{
+    color: #ffffd9;
+    background-color: #e94f37;
+    width: 25px;
+    height: 25px;
+    border-radius: 90px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    left: 10px;
+}
+
+.submit{
+    margin-left: 23px;
+    background-color: #e94f37;
+    color: #ffffd9;
+    width: 140px;
+    border: none;
+    height: 24px;
+    transition: 0.7s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: none;
+    border: 1px solid #e94f37;
+}
+
+#particles-js{
+    background-color: #393e41;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+}
+
+.n{
+    margin-left: 23px;
+    color: #ffffd9;
+}
+
+#day-show{
+    background-color: #f6f7eb;
+    color: #2a2e30;
+    border-radius: 90px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+
+}
+
+.n{
+    display: none;
+}
+
+@media (max-width:1023px){
+    .input{
+        width: 300px;
+    }
+
+    body::after{
+        z-index: -1;
+    }
+}
